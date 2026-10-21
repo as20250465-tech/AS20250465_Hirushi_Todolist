@@ -1,0 +1,64 @@
+body {
+    background-color: #f4f6fb;
+    font-family: Arial, sans-serif;
+}
+
+
+.todo-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.todo-container h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+.task-text {
+    flex-grow: 1;
+    overflow-wrap: anywhere;
+}
+
+
+.completed .task-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+
+#errorMessage {
+    min-height: 10px;
+    font-size: 14px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 576px) {
+
+    .todo-container {
+        padding: 20px;
+    }
+
+    .todo-container h2 {
+        font-size: 24px;
+    }
+
+    .input-group .btn {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+}
